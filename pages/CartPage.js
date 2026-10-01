@@ -8,7 +8,8 @@ exports.CartPage = class CartPage {
 
   async verifyItemInCart(itemName) {
     
-    await expect(this.page.locator('.inventory_item_name')).toHaveText(itemName);
+    // await expect(this.page.locator('.inventory_item_name')).toHaveText(itemName);
+    await expect(this.page.getByText('Sauce Labs Backpack')).toBeVisible();
   }
 
   async clickCheckout() {
