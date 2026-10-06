@@ -14,6 +14,7 @@ test('Complete e-commerce order flow', async ({ page }) => {
   const checkoutPage = new CheckoutPage(page);
   const confirmationPage = new ConfirmationPage(page);
 
+  //Login to the website and verify successful login
   await loginPage.goto();
   await loginPage.login('standard_user', 'secret_sauce');
   await productsPage.verifyLogin();

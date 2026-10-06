@@ -1,6 +1,10 @@
 name: SauceDemo Playwright Tests
 
 on:
+  push:
+    branches:
+      - main
+
   workflow_dispatch:
 
 jobs:
