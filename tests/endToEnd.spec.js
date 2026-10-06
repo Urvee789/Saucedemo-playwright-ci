@@ -16,7 +16,7 @@ test('Complete e-commerce order flow', async ({ page }) => {
 
   //Login to the website and verify successful login
   await loginPage.goto();
-  await loginPage.login('standard_user', 'secret_sauce');
+  await loginPage.login('standard_user', 'secret_sauce123');
   await productsPage.verifyLogin();
   await productsPage.addProductToCart();
   await productsPage.goToCart();
